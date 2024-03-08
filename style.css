@@ -1,0 +1,174 @@
+/*nav start*/
+.logo{
+    width: 120px ;
+}
+.navbar{
+    background: linear-gradient(to right, #97D7E1 100%, #b4e5d000 100%);
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.transparent-bg {
+    background-color: transparent !important;
+}
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    position: relative;
+    width: 300px;
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 10px;
+    border-radius: 45px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+/*nav end*/
+/*header start*/
+.dropdown-content {
+    margin-bottom: 20px;
+}
+.dropdown-content .input-group {
+    margin-bottom: 5px;
+}
+.dropdown-menu .form-select {
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    height: 38px;
+    text-align: center;
+}
+.btn-save {
+    background-color: yellow;
+    color: #212529;
+    width: 100%;
+    border-radius: 10px;
+}
+.label-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.label-container label {
+    color: black;
+    border: none;
+    font-weight:900;
+    font-size: 19px;
+}
+.custom-container {
+    position: relative;
+    overflow: hidden;
+}
+.background {
+    background-image: url('./Assets/header/header1.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the background to the back */
+ 
+}
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111720; /* Petroleum color */
+    opacity: 0.95; /* Adjust the opacity as needed */
+    z-index: -1; /* Place the overlay behind the content */
+}
+.content {
+    position: relative;
+    z-index: 1; /* Bring the content to the front */
+    padding: 20px; /* Adjust padding as needed */
+    color: #fff; /* Set text color to contrast with the background */
+    height: 350px;
+}
+.btn1{
+    background-color: yellow;
+    border: none;
+    width: 40px;
+    border-top-right-radius:25px ;
+    border-bottom-right-radius:25px ;
+}
+.content .row a{
+    color: white;
+    text-decoration: underline;
+}
+.dropdown1 button{
+    background-color: transparent; 
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px ;
+}
+.content input{
+    border-left: none;
+}
+.buttonsheader {
+    margin-right: 100px;
+    padding: 10px;
+    gap: 20px;
+}
+.buttonsheader button {
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 10px; /* Adjust the font size */
+    padding: 8px 16px; /* Adjust the padding */
+}
+@media (max-width: 576px) {
+    .buttonsheader {
+        margin-right: 0;
+    }
+}
+.headbottomright{
+    gap: 20px;
+}
+.content .headbottomright a{
+   text-decoration: none;
+}
+.headbottomleft{
+    gap: 20px;
+}
+.content .headbottomleft a{
+    text-decoration: none;
+}
+.content .dropdown-menu a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+/*header end*/
+/*footer*/
+footer p{
+    font-size: 12px;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    justify-content: center;
+    margin-top: 15px;
+  }
+.social-icons svg {
+    width: 20px; 
+    height: auto; 
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1;
+    fill: white; 
+  }
+  /*footer*/
